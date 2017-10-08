@@ -1,0 +1,244 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+\sala
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Sushan}{Bhattarai}{ \urlstyle{same}\url{https://susanbhattarai.github.io/} \\
+\href{mailto:sushantsusan39@gmail.com}{susantsusan39@gmail.com} | 202.403.4173
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Howard University}
+\descript{BS in Computer Science}
+\location{Expected May 2019 | Washington, DC \\  GPA: 3.99/4}
+\sectionsep
+
+\subsection{Stanford University}
+\descript{BS in Computer Science}
+\location{Exchange Student | Stanford, CA}
+\sectionsep
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/susanbhattarai}{\custombold{susanbhattarai}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/sushan-bhattarai-3a7220b2/}{\custombold{susanbhattarai}} \\
+Twitter://  \href{https://twitter.com/sushantsusan39}{\custombold{@sushantsusan39}} \\
+Quora://  \href{https://www.quora.com/profile/Susan-Bhattarai}{\custombold{Sushan-Bhattarai}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Stanford}
+Design and Analysis of Algorithms \\
+Logic and Automated Reasoning \\
+Databases \\
+\sectionsep
+
+\subsection{Howard}
+Computer Organization \\
+Programming Languages \\
+Functional Programming \\
+Unix Tools and Scripting \\
+Discrete Maths \\
+Linear Algrebra \\
+Mobile App Development \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Python \textbullet{}   Go \textbullet{} JavaScript \textbullet{} Scala \\
+ C++ \textbullet{}  CSS \textbullet{} Java
+ \textbullet{} NodeJS  \\ d3.js \textbullet{}  Bash \\
+\sectionsep
+\subsection{Databases}
+MySQL \textbullet{} Mongodb
+\sectionsep
+
+\subsection{Technologies}
+ Apache Spark \textbullet{} Grafana \\ 
+  Rest API Design \textbullet{} AWS \textbullet{} \\
+  Google Cloud Platform APIs \\
+  Kubernetes \textbullet{} 
+  Docker \\
+  Apache Kafka 
+ \sectionsep
+ 
+\section{Societies} 
+2015 & Math Club at Howard University \\
+2015 & Howard ACM Chapter \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Tinder}
+\descript{| Data Engineering Intern }
+\location{July 2017 – Sep 2017 | Los Angeles, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Writing Spark jobs, implementing crucial features for a microservice that will power a major Tinder feature
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Google}
+\descript{| Software Engineering Intern }
+\location{May 2017 – July 2017 | Sunnyvale, CA}
+\begin{tightemize}
+\item Created a seamless configurable build pipeline for automatic containerization of application. \item Added native runtime support for NodeJS, Python and Java in Google Edge's enterprise API hosting platform. \item Designed Rest API for application containerization using orchestration of Google Cloud Platform APIs. \end{tightemize}
+\sectionsep
+
+\runsubsection{Twitter}
+\descript{| Software Engineering Intern}
+\location{May 2016 – August 2016 | San Francisco, CA}
+\begin{tightemize}
+\item Selected as one of 17 Twitter Academy Engineering interns for twelve weeks in Twitter Onboarding team. \item Created a backend service in Scala for adding Rio Olympic 2016 module in the Connect Tab. \item Created the empty states for TimeLine, DM and Notifications for Responsive Web using React JS- Redux stack. 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Howard University}
+\descript{| Undergrad Research(Dept. of CS)}
+\location{Jan 2017 – May 2017 | Washington, DC}
+Used computer vision techniques to develop a proof of concept method for vehicle counting project. \\
+\sectionsep
+\runsubsection{Howard University}
+\descript{| Undergrad Research(Dept. of Math)}
+\location{Aug 2016 – Dec 2016 | Washington, DC}
+Learning and applying ML techniques like Top Scoring Pairs and Support Vector Machines in R on the gene
+expression data of cancer patients for research study.
+\sectionsep
+
+
+\section{Projects/ Extracurricular}
+\runsubsection{Google Hack 2016}
+\descript{| Second Position, Oct 2016 }
+ Used live Twitter's user data to plot the sentiment scores(color representation) in the world map. Stack Used: Node, Twitter API, MapBox, Leaflet JS, Sentiment Analysis Library(nltk) 
+\sectionsep
+
+\runsubsection{MIDAS Hackathon}
+\descript{| 4th Position, Feb 2016}
+Used serial processing for mining US Census data for plotting the population suffering from visual, cognitive, hearing and ambulatory difficulties.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Participations} 
+\begin{tabular}{rll}
+2017	     &Microsoft Coding Contest[1st Prize] \\
+2017	     & ACM ICPC Regional Contest for Howard University \\
+2016	     & Facebook Tech Start Program [Teaching Assistant Volunteering]\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\end{document}
